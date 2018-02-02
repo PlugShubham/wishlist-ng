@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" mat-button>
+          Wishlist <span class="glyphicon glyphicon-heart"></span> Counter
+        </button>
+        <span class="example-spacer"></span>
+        <button routerLink="/wishlist" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" mat-button>Wishlist</button>
+        <button routerLink="/hintlist" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" mat-button>HintList</button>
+        <button routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" mat-button>About</button>        
+      </mat-toolbar-row>
+</mat-toolbar>
+<br/>
+<br/>
+<router-outlet></router-outlet>
+
+
+

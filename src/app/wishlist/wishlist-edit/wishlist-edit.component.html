@@ -1,0 +1,12 @@
+<div *ngIf="showWish;else showmsg">
+  <h2>Delete Wish</h2>
+  <mat-card  (click)="deleteItem()"
+  style="cursor: pointer"
+>
+{{wish}}
+<span class="glyphicon glyphicon-remove-sign"></span>
+</mat-card>
+</div>
+<ng-template #showmsg>
+    Select Any Item From the list
+</ng-template>

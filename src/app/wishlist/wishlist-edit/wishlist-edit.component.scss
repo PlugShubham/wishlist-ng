@@ -1,0 +1,13 @@
+.editbox{
+   cursor: pointer;
+   border:2px solid grey;
+   padding:10px;
+   margin-right: 500px; 
+   font-size:15px;
+   border-radius: 5px;
+}
+.editbox:hover{
+    @extend .editbox;
+    background-color: grey;
+    color:white;
+}

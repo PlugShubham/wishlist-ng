@@ -1,0 +1,29 @@
+$heart:red;
+$primary_color:grey;
+$secondary_color:white;
+$font_primary:Courier, monospace;
+
+.glyphicon-heart{
+    color:$heart;
+}
+nav{
+    border-bottom-color: $secondary_color;
+    background-color: $secondary_color;
+    a{
+        font-family: $font_primary;
+        color:$primary_color;
+        background-color: $secondary_color;
+    }
+    a:hover{
+        font-family: $font_primary;
+        color:$secondary_color;
+        background-color: $primary_color;
+    }
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.active{
+    color: #3f51b5;
+    background-color: white;
+}

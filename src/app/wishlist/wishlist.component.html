@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <mat-list>
+        <mat-list-item *ngFor="let wish of wishlist" 
+        style="cursor: pointer"
+        (click)="editListItem(wish)">
+          <span class="glyphicon glyphicon-heart"></span>
+          <p mat-line> {{ wish }} </p>
+        </mat-list-item>
+      </mat-list> 
+      <br/>
+      <br/>
+      <br/>
+      <div class="container newWish">
+        <!-- <h1>Add New <span class="glyphicon glyphicon-heart"></span></h1> -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Add new Wish" #newwish>
+        </mat-form-field>
+        <button (click)="addWishList()"  mat-raised-button color="primary">ADD</button>
+        <button (click)="goToHintList()"  mat-raised-button color="primary">HINTS</button>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <app-wishlist-edit></app-wishlist-edit>
+    </div>
+  </div>
+  My Selected wish is {{ wish }}
+</div>
+ 

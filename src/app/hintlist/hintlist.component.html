@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <p>Click on any hint to add in WishList.</p>
+  <div class="row">
+    <div class="col-md-4">
+            <mat-list>
+                    <mat-list-item *ngFor="let hint of hints" 
+                        style="cursor: pointer"
+                        (click)="addToWishListItem(hint)">
+                          <span class="glyphicon glyphicon-plus-sign"></span>
+                          <p mat-line> {{ hint }} </p>
+                    </mat-list-item>
+            </mat-list>
+    </div>
+  </div>
+</div>
+
